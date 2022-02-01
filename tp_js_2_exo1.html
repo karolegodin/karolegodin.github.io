@@ -26,10 +26,11 @@ nIntervId = setInterval(compteur, 1000);
 
       console.log(i);
       i--;
+    var textContent = element.textContent;
+    console.log("textContent: "+textContent);
+    document.getElementById("divA").textContent = i;
   }
-var textContent = element.textContent;
-console.log("textContent: "+textContent);
-document.getElementById("divA").textContent = i;
+
   
 </script>
 
