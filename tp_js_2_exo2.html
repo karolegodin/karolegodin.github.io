@@ -18,7 +18,7 @@ var ctx = document.getElementById('canvas').getContext('2d');
 let nIntervId;
 let i = 0;
 nIntervId = setInterval(compteur, 10);
-window.onload=setInterval(compteur, 2000);
+
 
 function compteur() {
   if(i>=600){
@@ -33,6 +33,7 @@ i = i + 10;
 //ctx.clearRect(0, 0, 600, 600);
 }
 
+  window.onload=setInterval(compteur, 2000);
   
 </script>
 
