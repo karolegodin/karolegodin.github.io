@@ -11,6 +11,8 @@
   
 <body>
   
+<div id="divA"></div>
+  
 <script>
   // variable to store our intervalID
 let nIntervId;
@@ -25,6 +27,8 @@ nIntervId = setInterval(compteur, 1000);
       console.log(i);
       i--;
   }
+  
+document.getElementById("divA").textContent = i;
   
 </script>
 
