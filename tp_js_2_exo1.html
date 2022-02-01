@@ -18,11 +18,12 @@ let i = 10;
 nIntervId = setInterval(compteur, 1000);
 
   function compteur(){
-    while(i>=0){
+     if(i<=0){
+       clearInterval(intervalId);
+     }
+
       console.log(i);
       i--;
-      clearInterval(nIntervId);
-    }
   }
   
 </script>
